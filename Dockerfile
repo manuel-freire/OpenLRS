@@ -20,6 +20,6 @@ RUN mvn clean package
 
 # run (may lookup env. variables to make links work)
 EXPOSE 8080
-CMD [ "run.sh" ]
+CMD [ "./run.sh" ]
 
 # EXPECTS: Mongo at 27017, Redis at 6379
