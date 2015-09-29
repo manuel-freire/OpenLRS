@@ -16,10 +16,11 @@ RUN mkdir ${WORK_DIR} \
 WORKDIR ${WORK_DIR}
 
 # get dependencies sorted out
-RUN mvn clean package
+# running tests would require Redis, ElasticSearch up and running
+RUN mvn -Dmaven.test.skip=true compile
 
 # run (may lookup env. variables to make links work)
 EXPOSE 8080
 CMD [ "./run.sh" ]
 
-# EXPECTS: Mongo at 27017, Redis at 6379
+# EXPECTS: Mongo at 27017, Redis at 6379 (see run.sh)
