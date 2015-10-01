@@ -1,0 +1,7 @@
+language: java
+services:
+  - redis-server
+jdk:
+  - openjdk7
+after_success:
+  - mvn cobertura:cobertura coveralls:report
