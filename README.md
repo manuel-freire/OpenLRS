@@ -1,5 +1,8 @@
 OpenLRS
 =======
+[![Build Status](https://travis-ci.org/e-ucm/OpenLRS.svg)](https://travis-ci.org/e-ucm/OpenLRS) [![Coverage Status](https://coveralls.io/repos/e-ucm/OpenLRS/badge.svg?branch=master&service=github)](https://coveralls.io/github/e-ucm/OpenLRS?branch=master)
+
+
 Open source Java based Learning Record Store (http://en.wikipedia.org/wiki/Learning_Record_Store, http://tincanapi.com/learning-record-store/) which is compatible with TinCanAPI (http://tincanapi.com/) and Experience API (http://www.adlnet.gov/tla/experience-api).
 
 *************************************************************************************
